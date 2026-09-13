@@ -1,10 +1,15 @@
 h1 {
     color:blue;
-    text-align: left;
+    text-align: center;
+    border-style: solid;
 }
 body {
     background-color: snow;
 }
 h2 {
     text-align: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
 }
