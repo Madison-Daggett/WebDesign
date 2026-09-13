@@ -16,3 +16,10 @@ img {
 body {
     padding: 50px;
 }
+div.mycontainer {
+    width: 100%;
+    overflow: auto;
+}
+div.mycontainer div{
+    width:33%;
+}
