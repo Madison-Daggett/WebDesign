@@ -14,16 +14,6 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-nav {
-    background-color: aliceblue;
-    color: black;
-    justify-content: space-between;
-}
-.title {
-    font-size: 200px;
-    font-weight: bold;
-    text-align: center;
-}
 .nav-links {
     display: flex;
     list-style: none;
@@ -40,7 +30,4 @@ nav {
 }
 .nav-links a:hover {
     color:cornflowerblue;
-}
-body {
-    padding-top: 60 px;
 }
