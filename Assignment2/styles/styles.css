@@ -35,7 +35,7 @@ li {
 
 /* Class styling */
 
-.header {
+div .header {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -46,7 +46,7 @@ li {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 2px solid black;
 }
-.navbar {
+div .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,12 +67,12 @@ li {
 .nav-links a:hover {
     color: cornflowerblue;
 }
-.gallery {
+div .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
 }
-.image {
+div .image {
     margin: 5px;
     border: .5px solid white;
     width: 180px;
