@@ -14,7 +14,8 @@ img {
     height: auto;
 }
 h1 {
-    font-size: 40px;
+    font-size: 30px;
+    color: #ffffff;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -41,10 +42,11 @@ li {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #272e2d;
     padding: 10px 10px;
     top: auto;
     z-index: 1000;
+    border: none;
 }
 .nav-links a{
     color: #000000;
