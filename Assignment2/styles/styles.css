@@ -67,6 +67,7 @@ li {
 }
 .image-grid {
     display: grid;
+    flex: auto;
     grid-template-columns: repeat(2,1fr);
     gap: 15px;
     max-width: 800px;
