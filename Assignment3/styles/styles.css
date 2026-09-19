@@ -1,0 +1,119 @@
+/* Element Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:#f3f4ff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 30px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1 {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+ul {
+    padding: 5px;
+    text-align: center;
+}
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Class styling */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #272e2d;
+    padding: 10px 10px;
+    top: auto;
+    z-index: 1000;
+    border: none;
+}
+.nav-links a{
+    color: #000000;
+    text-decoration: underline;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #6495ed;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.image {
+    margin: 5px;
+    border: .5px solid #ffffff;
+    width: 180px;
+}
+.image-grid {
+    display: grid;
+    flex: auto;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px;
+}
+.image-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    color: #ffffff;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16 px;
+
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.image-container:hover .image-overlay {
+    opacity: 1;
+}
