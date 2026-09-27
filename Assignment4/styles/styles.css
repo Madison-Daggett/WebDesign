@@ -115,3 +115,10 @@ li {
 .image-container:hover .image-overlay {
     opacity: 1;
 }
+
+.manrope-header {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
