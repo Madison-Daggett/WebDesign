@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body {
-    background: color #dec59e;
+    color: #dec59e;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 30px;
 }
@@ -65,7 +65,7 @@ li {
 }
 .image {
     margin: 5px;
-    width: 180px;
+    max-width: 100%;
 }
 .image-grid {
     display: flex;
