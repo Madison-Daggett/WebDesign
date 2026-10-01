@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body {
-    color: #dec59e;
+    background-color: #dec59e;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 30px;
 }
@@ -51,7 +51,6 @@ li {
 }
 .nav-links a{
     color: #64784d;
-    text-decoration: underline;
     font-size: 20px;
     transition: color 0.3s ease;
 }
@@ -80,10 +79,23 @@ li {
     max-width: 100%;
     height: 300px;
 }
+.days-one-regular {
+  font-family: "Days One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.roboto-header {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 .image-container {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 800px;
+    height: 400px;
     overflow: hidden;
 }
 .image-container img {
@@ -98,6 +110,7 @@ li {
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 8px;
 
     background-color: #202808;
     display: flex;
@@ -106,19 +119,11 @@ li {
   
     color: #c4866d;
     text-decoration: none;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16 px;
+    font-size: 20 px;
 
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
 .image-container:hover .image-overlay {
     opacity: 1;
-}
-
-.manrope-header {
-  font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
 }
