@@ -6,7 +6,6 @@
 }
 body {
     background-color: #dec59e;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 30px;
 }
 img {
@@ -18,7 +17,6 @@ h1 {
     font-size: 20px;
     color: #c4866d;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 nav {
     max-width: 100%;
@@ -34,7 +32,6 @@ li {
     display: inline-block;
     margin: 0 10px;
     padding: 5px 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Class styling */
@@ -94,7 +91,7 @@ li {
 }
 .image-container {
     position: relative;
-    width: 800px;
+    width: 600px;
     height: 400px;
     overflow: hidden;
 }
@@ -119,7 +116,7 @@ li {
   
     color: #c4866d;
     text-decoration: none;
-    font-size: 20 px;
+    font-size: 100px;
 
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
