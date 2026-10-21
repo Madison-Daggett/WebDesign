@@ -135,6 +135,9 @@ li {
   font-weight: 400;
   font-style: normal;
 }
+
+/* Image Overlay on Portfolio Page */
+
 .image-container {
     position: relative;
     width: 500px;
@@ -169,4 +172,27 @@ li {
 }
 .image-container:hover .image-overlay {
     opacity: .85;
+}
+
+/* Text over image on contact page */
+
+.contact-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.contact-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.contact-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #c4866d;
+    text-align: center;
 }
