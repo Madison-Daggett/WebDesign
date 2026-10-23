@@ -41,6 +41,8 @@ li {
 
 /* Class styling */
 
+/* Header Styling */
+
 .header {
     display: flex;
     justify-content: space-around;
@@ -51,45 +53,48 @@ li {
     z-index: 1000;
     border: none;
 }
-.dropdown-button {
+.gluten-header {
+    margin: 0;
+}
+.header-image3 {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    object-fit: contain;
+    display: flex;
+}
+.header-image2 {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    object-fit: contain;
+    display: flex;
+}
+.header-image {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    object-fit: contain;
+    display: flex;
+}
+
+/* nav bar images */
+
+.nav-links img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    align-items: center;
+    display: flex;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #202808;
-    color: #64784d;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    text-decoration: underline;
+    padding: 10px 0;
 }
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.dropdown-content a {
-  color: #64784d;
-  font-size: 20px;
-  transition: color 0.3s ease;
-}
-.dropdown-content a:hover {
-    background-color: white;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-.nav-links a{
-    color: #64784d;
-    font-size: 20px;
-    transition: color 0.3s ease;
-}
-.nav-links a:hover {
-    color: #c4866d;
-}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -174,6 +179,34 @@ li {
     opacity: .85;
 }
 
+/* Image Overlay - Home Page */
+.home-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.home-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.home-image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.home-image-container:hover .home-image-overlay {
+    opacity: .95;
+}
+
 /* Text over image on contact page */
 
 .contact-image-container {
@@ -188,7 +221,7 @@ li {
     object-fit: cover;
     display: block;
 }
-.contact-text-overlay {
+.text-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
