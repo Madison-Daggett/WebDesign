@@ -1,47 +1,55 @@
-/* Element Styling */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: #dec59e;
     padding: 30px;
     margin: 0;
 }
+
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
+
+/* Fonts */
+
 h1 {
     font-size: 50px;
     color: #c4866d;
     text-align: center;
 }
+
 h2 {
     color: #c4866d;
     text-align: center;
     font-size: 100px;
     text-decoration: none;
 }
-nav {
-    max-width: 100%;
-    margin: 0 auto;
-    background-color: #202808;
-}
-ul {
-    padding: 5px;
-    text-align: center;
-}
-li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 0 10px;
-    padding: 5px 10px;
+
+.gluten-header {
+    font-family: "Gluten", cursive;
+    font-weight: 600;
+    font-style: normal;
 }
 
-/* Class styling */
+.gluten-regular {
+    font-family: "Gluten", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 5px 0px #334233;
+}
+
+.indie-flower-regular {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* Header Styling */
 
@@ -51,44 +59,39 @@ li {
     align-items: center;
     background-color: #33432b;
     padding: 25px 20px;
-    top: auto;
     z-index: 1000;
     border: none;
 }
-.gluten-header {
-    margin: 0;
-}
-.header-image3 {
-    width: 15px;
-    height: 15px;
-    padding: 5px;
-    object-fit: contain;
-    display: flex;
-}
-.header-image2 {
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-    object-fit: contain;
-    display: flex;
-}
+
 .header-image {
     width: 50px;
     height: 50px;
     padding: 5px;
     object-fit: contain;
-    display: flex;
 }
 
-/* nav bar images */
-
-.nav-links img {
+.header-image2 {
     width: 30px;
     height: 30px;
+    padding: 5px;
     object-fit: contain;
-    align-items: center;
-    display: flex;
 }
+
+.header-image3 {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    object-fit: contain;
+}
+
+/* Nav Bar Styling */
+
+nav {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #202808;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -97,60 +100,45 @@ li {
     padding: 10px 0;
 }
 
-/*rows and columns gallery styling*/
+ul {
+    padding: 5px;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+
+.nav-links img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* Image Gallery */
+
 .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
 }
+
 .column {
     flex: 33.33%;
     max-width: 33.33%;
     padding: 0 4px;
 }
+
 .column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
 }
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-.gluten-header {
-  font-family: "Gluten", cursive;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
-}
-.gluten-regular {
-    font-family: "Gluten", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-        "slnt" 0;
-    text-shadow: 2px 5px 0px #334233;
-}
-.indie-flower-regular {
-  font-family: "Indie Flower", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
 
-/* Image Overlay on Portfolio Page */
+/* Portfolio Image Overlay */
 
 .image-grid {
     display: grid;
@@ -160,19 +148,21 @@ li {
     max-width: 1000px;
     margin: 30px auto;
 }
+
 .image-container {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
     cursor: pointer;
 }
+
 .image-container img {
     width: 500px;
     height: 500px;
     object-fit: cover;
     border-radius: 10px;
-    display: grid;
 }
+
 .image-overlay {
     position: absolute;
     inset: 0;
@@ -186,9 +176,11 @@ li {
     opacity: 0;
     transition: opacity 0.4s ease;
 }
+
 .image-container:hover .image-overlay {
     opacity: .85;
 }
+
 .read-more {
     margin-top: 15px;
     padding: 10px 20px;
@@ -196,19 +188,21 @@ li {
     border-radius: 5px;
 }
 
-/* Image Overlay - Home Page */
+/* Home Image Overlay */
+
 .home-image-container {
     position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
+
 .home-image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
+
 .home-image-overlay {
     position: absolute;
     top: 50%;
@@ -220,11 +214,12 @@ li {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
+
 .home-image-container:hover .home-image-overlay {
     opacity: .95;
 }
 
-/* Text over image on contact page */
+/* Contact Page */
 
 .contact-image-container {
     position: relative;
@@ -232,12 +227,13 @@ li {
     height: 100%;
     overflow: hidden;
 }
+
 .contact-image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
+
 .text-overlay {
     position: absolute;
     top: 50%;
@@ -245,4 +241,20 @@ li {
     transform: translate(-50%, -50%);
     color: #c4866d;
     text-align: center;
+}
+
+/* Responsive Styling */
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
