@@ -1,19 +1,5 @@
-# Assignment 4 README Q's
+What did you create or organize this week that you think will be most useful in future websites? Why?
+## I organized my CSS code into more cohesive sections, and I got rid of some extranneous html code on my pages. Specifically, I just noticed that I had copied my website title and body tag at the top of each page twice, so I got rid of one on each page. I also added a media folder and a screenshots folder. I got rid of my "components" page from the last assignment, which was a carbon copy of my index.html. I also got rid of a "portfolio test" page from the last assignment that was a test run for my portfolio home page. 
 
-## Icons
-I used a "contact" icon (envelope), an "Instagram" icon, and a "home" icon. I drew the logos on my Ipad in Procreate and uploaded them to my page. I struggled to come up with other logos for my page, so I drew a cloud and some stars that I could use throughout my website for design purposes.
-
-## colors, values, and lines
-I used a color scheme that I found on pinterest that I liked. I used greens for the title divs, a dark pink for the titles and text, and a light pink peach-y color for the background. 
-
-## Google Fonts
-I used "Gluten" and "Indie Flower" as my fonts. Indie flower was slightly smaller and worked better for text outside of the titles. For the titles and more important text, I used "gluten" because it appears chunkier and stands out better on the page. Both fonts had a whimsical feel that I liked for my webpage. 
-
-## Table
-I haven't included a table, I wondered what a good use would be for a table in my art portfolio. Any ideas?? Sorry I neglected to include it. 
-
-## Design Goals
-For my form, I decided to make a contact form and allow the user to get in touch with me via email. I would like to do more design work on it. The form would hopefully encourage visitors to ask about commision work or reach out to learn more. 
-
-## Checking In
-It took me a minute to figure out Google fonts, but once I did it felt really easy and intuitive. I usually have to look things up on W3 schools when creating new components. When creating gallery conponents with columns and rows, W3 schools was really helpful. I struggle more with the design side of elements. I have a certain way I want things to look, and when I can't get there I feel frustrated at times. With my website being very image- heavy, I've learned how to use display: flex well for the most part. 
+##  I think that the most useful thing that I learned is that it would be a good idea to always edit my work each time and organize it so that it's easier to maintain later. I have a bad habit of letting my code be if it works, even if there is a simpler way to code it. 
+How did working with reusable components affect the way you approached your design this week?
