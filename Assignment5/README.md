@@ -3,3 +3,7 @@ What did you create or organize this week that you think will be most useful in 
 
 ##  I think that the most useful thing that I learned is that it would be a good idea to always edit my work each time and organize it so that it's easier to maintain later. I have a bad habit of letting my code be if it works, even if there is a simpler way to code it. 
 How did working with reusable components affect the way you approached your design this week?
+## using reusable components definitely simplified the process by allowing me not to over-complicate things. Especially at this point in the design process, it's helpful to remember to stay organized. 
+
+# Component Plan
+## I'd really like to add a slideshow of different art works on the home page. I think that having a slideshow of images instead of just one could be more enticing for people to click on and view my portfolio. The slideshow i plan to make will require a button (or multiple), images, and text on hover. I may end up using java script so that the images will scroll automatically. I think I will use flexbox mostly for the appearance of the images, perhaps a combination of flexbox and grid. 
