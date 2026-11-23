@@ -1,0 +1,250 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dec59e;
+    padding: 30px;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Fonts */
+
+h1 {
+    font-size: 50px;
+    color: #c4866d;
+    text-align: center;
+}
+
+h2 {
+    color: #c4866d;
+    text-align: center;
+    font-size: 100px;
+    text-decoration: none;
+}
+
+.gluten-header {
+    font-family: "Gluten", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.gluten-regular {
+    font-family: "Gluten", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 5px 0px #334233;
+}
+
+.indie-flower-regular {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Header Styling */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #dec59e;
+    padding: 25px 20px;
+    z-index: 1000;
+    border: none;
+}
+
+.header-image {
+    width: 800px;
+    height: 200px;
+    padding: 1px;
+    object-fit: contain;
+}
+
+.header-logo {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    object-fit: contain;
+}
+
+/* Nav Bar Styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: none;
+    gap: 20px;
+}
+
+.nav-button {
+    display: flex;
+    flex-direction: column;
+    background-color: #202808;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button img {
+    width: 50px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.nav-button:hover {
+    background-color: #0d1102;
+}
+/* Image Gallery */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Portfolio Image Overlay */
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.image-container img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.image-container:hover .image-overlay {
+    opacity: .85;
+}
+
+.read-more {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+/* Home Image Overlay */
+
+.home-image-container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.home-image-container img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.home-image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.home-image-container:hover .home-image-overlay {
+    opacity: .95;
+}
+
+/* Contact Page */
+
+.contact-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contact-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #c4866d;
+    text-align: center;
+}
+
+/* Responsive Styling */
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
